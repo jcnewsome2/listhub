@@ -9,6 +9,8 @@ module.exports = function(app,passport)
 
 	 app.get('/mygroups', authController.myGroups)
 
+	 app.get('/groups', authController.groups)
+
 	  app.post('/signup', passport.authenticate('local-signup', {
             successRedirect: '/dashboard',
  

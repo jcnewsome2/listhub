@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta charset="utf-8" />
+	
+	<title>login</title>
+	<link rel="stylesheet" href="css/flexi-background.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+
+	    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/bootstrapCore.css" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+
+
+	<!-- jQuery CDN -->
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
+</head>
+
+<body>
+
+<script src="js/flexi-background.js" type="text/javascript" charset="utf-8"></script>
+
+<div class="navbar-wrapper">
+    <div class="container">
+
+      <nav class="navbar navbar-inverse navbar-static-top">
+        
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> List Hub</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a  class = "btn btn-lg" role = "button" href="/login"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Login/Sign-Up</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </nav>
+
+    </div>
+</div>
+
+<div class = "container">
+	<div class="row">
+		<div class = "col-md-12 text-center">
+			<h2><span class="strong"> Welcome to ListHub USER X! </span></h2>
+		</div>
+		<div class = "col-md-6 col-md-offset-3">
+			<p>You can see your current groups in the left hand dropdown menu. If you do not currently belong to a group you can add one or search the current groups listings to join one.</p>
+		</div>
+	</div>
+</div>
+
+
+<div class = "container">
+	<div class = "row top-space">
+
+		<div class = "col-md-3" id = "group-members">
+			<!-- Split button -->
+			<div class="btn-group">
+			  <button type="button" class="btn btn-lg btn-info"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Current Groups</button>
+			  <button type="button" class="btn btn-info btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    <span class="caret"></span>
+			    <span class="sr-only">Toggle Dropdown</span>
+			  </button>
+			  <ul class="dropdown-menu">
+			    <li><a href="#">Happy Campers</a></li>
+			    <li><a href="#">Bloggers</a></li>
+			    <li><a href="#">Personal List</a></li>
+			    
+			  </ul>
+			</div>
+  		</div>
+
+		<div class = "col-md-6" id = "add-list">
+								      
+			<form>
+			  <div class="form-group">
+			  	<label for="group-list">Can't find your group?</label>
+			    <p> If you are unable to find your group feel free to create a new on here</p>
+			    <input type="text" class="form-control" id="group-list">
+			  </div>
+
+			  <button id = "add-item" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+
+		<div class = "col-md-3" id = "group-members">
+			
+			<select class="selectpicker" data-live-search="true" title="Find a group to join here:">
+			  <option>Newsome Family Potluck</option>
+			  <option>Grand Canyon Hike</option>
+			  <option>Thompson Family Tailgate</option>
+			</select>
+
+			<form>
+				<button id="select-group" class="btn btn-default">Submit</button>
+			</form>
+
+  		</div>
+
+	</div>
+</div>
+
+
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bootstrap/bootstrapCore.js"></script>
+
+<script type="text/javascript" src = "js/script.js"></script>
+
+
+
+</html>

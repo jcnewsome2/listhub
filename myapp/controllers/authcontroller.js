@@ -17,3 +17,7 @@ exports.myGroups = function(req, res)
 {
 	res.render('list-man');
 }
+exports.groups = function(req,res)
+{
+	res.render('list-join');
+}
