@@ -144,3 +144,12 @@ h1 {
 #box form input[type=button]:active, #box form input[type=submit]:active{
 	background-position: 0 -88px;
 }
+	
+.Sign__Up {
+    display: block;
+    position: absolute;
+    top: 255px;
+    right: 84px;
+    width: 203px;
+    height: 44px;
+}

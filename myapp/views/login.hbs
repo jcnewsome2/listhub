@@ -21,7 +21,7 @@
 
 	<script src="js/flexi-background.js" type="text/javascript" charset="utf-8"></script>
 
-<div class="navbar-wrapper">
+<!-- <div class="navbar-wrapper">
       <div class="container">
 
         <nav class="navbar navbar-inverse navbar-static-top">
@@ -46,7 +46,7 @@
         </nav>
 
       </div>
-    </div>
+    </div> -->
 
  <!-- Log In Modal -->
   <div class="modal fade" id="loginModal" role="dialog">
@@ -125,12 +125,24 @@
 	<div id="box">
 		<img src="images/listhub-white.png" class="logo" alt="yourlogo" />
 		<h1>Member Login</h1>
-		<form class="form-sign-in ",action="/login",Method='GET'  >
+		<form class="form-sign-in" action="/login" method="GET">
 			<input type="text" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Username':this.value;" value="Username" />
-			<input type="password" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Password':this.value;" value="Password">
+			<input type="password" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Password':this.value;" value="Password"/>
+      
 			<input type="checkbox" id="remember" value="Remember" />
 			<div class="hover-opacity"><label for="remember">Remember me</label></div>
-			<input type="button" name="" value="Log In" />
+			<ul class="list">
+        <li class="list-item">
+          <input type="button" name="" value="Log In" />
+        </li>
+        <li class="list-item">
+          <input type="button" name="" value="Sign-Up" />
+          <!-- <a data-toggle="modal" data-target="#signupModal" class="Sign__Up">Sign-Up</a> -->
+        </li>
+      </ul>
+      <!-- <a data-toggle="modal" data-target="#signupModal" class="Sign__Up">Sign-Up</a> -->
+                <!-- <li><a  class = "btn btn-lg" role = "button" data-toggle = "modal" data-target = "#signupModal">Sign-Up</a></li> -->
+      
 		</form>
 	</div>
 	

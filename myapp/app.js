@@ -25,7 +25,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'views')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 var flash = require('connect-flash');
 app.use(flash());
@@ -34,9 +34,9 @@ app.use(flash());
 
 var models=require("./models");
 models.sequelize.sync().then(function(){
-console.log("ok");  
+  console.log("ok");  
 }).catch(function(err){
-console.log(err,"There was an error");
+  console.log(err,"There was an error");
 });
 
 var authRoute = require('./routes/auth.js')(app,passport);

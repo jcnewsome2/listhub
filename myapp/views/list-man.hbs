@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta charset="utf-8" />
+	
+	<title>login</title>
+	<link rel="stylesheet" href="css/flexi-background.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+
+	    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/bootstrapCore.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<script src="js/flexi-background.js" type="text/javascript" charset="utf-8"></script>
+
+<div class="navbar-wrapper">
+  <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">List Hub</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a  class = "btn btn-lg" role = "button" data-toggle = "modal" data-target = "#loginModal">Login</a></li>
+                <li><a  class = "btn btn-lg" role = "button" data-toggle = "modal" data-target = "#signupModal">Sign-Up</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </nav>
+
+	</div>
+</div>
+
+<div class = "container">
+	<div class = "row">
+
+		<div class = "col-md-3" id = "group-members">
+		  <div class="list-group">
+		  	<h2><strong>Group: </strong>The Happy Campers</h2>
+		    <a class="list-group-item">
+		      <h4 class="list-group-item-heading">Aaron Arndt</h4>
+		      <p class="list-group-item-text">Backpack</p>
+		      <p class="list-group-item-text">Hammock</p>
+		      <p class="list-group-item-text">Chex Mix</p>
+		    </a>
+		    <a class="list-group-item">
+		      <h4 class="list-group-item-heading">Josh Newsome</h4>
+		      <p class="list-group-item-text">Sleeping Bag</p>
+		      <p class="list-group-item-text">Tent</p>
+		      <p class="list-group-item-text">Ski Poles</p>
+		    </a>
+		    <a class="list-group-item">
+		      <h4 class="list-group-item-heading">Sarah Khan</h4>
+		      <p class="list-group-item-text">Hiking Boots</p>
+		      <p class="list-group-item-text">Water</p>
+		      <p class="list-group-item-text">Tent</p>
+		    </a>
+		    <a class="list-group-item">
+		      <h4 class="list-group-item-heading">Fatima Husain</h4>
+		      <p class="list-group-item-text">Tent</p>
+		      <p class="list-group-item-text">Water Jugs</p>
+		      <p class="list-group-item-text">Cooking Utensils</p>
+		    </a>		    
+		  </div>
+		</div>
+
+		<div class = "col-md-6" id = "add-list">
+								       <!--  <div class="createContainer">
+								            <p><label for="new-task">Add Item to list </label><input id="new-task" type="text"><button>Add</button></p>
+								            <h3>List</h3>
+								            
+								        
+								        </div> -->
+			<form>
+			  <div class="form-group">
+			  	<label for="list-item">Add Item Needed:</label>
+			    <p> These items will be able to be chosen by your group members when added to the group list. All members and the items they are responsible for can be seen in your left hand menu.</p>
+			    <input type="text" class="form-control" id="list-item">
+			  </div>
+
+			  <button id = "add-item" class="btn btn-default">Submit</button>
+			</form>
+
+			<ul id="incomplete-tasks">
+			</ul>
+	            <h3>Completed</h3>
+	            <ul id="completed-tasks">
+	        </ul>
+		</div>
+
+		<div class = "col-md-3" id = "group-list">
+			<div class="checkbox">
+			  <label><input type="checkbox" value="">Canteen</label>
+			</div>
+			<div class="checkbox">
+			  <label><input type="checkbox" value="">Marshmellows</label>
+			</div>
+			<div class="checkbox">
+			  <label><input type="checkbox" value="">Camers</label>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+
+
+
+
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bootstrap/bootstrapCore.js"></script>
+
+<script type="text/javascript" src = "js/script.js"></script>
+
+
+</html>
