@@ -120,15 +120,32 @@ h1 {
 	color:rgba(255,255,255,1);
 }
 
-#box form input[type=button], #box form input[type=submit] {
+#box form input[name=login], #box form input[type=submit] {
 	background: url(../images/button.png) no-repeat;
 	border: none;
 	display: block;
 	position: absolute;
 	top: 255px;
 	left: 84px;
-	width: 203px;
+	width: 150px;
 	height: 44px;
+	cursor: pointer;
+	font-size:16px;
+	font-weight:bold;
+	text-align:center;
+	color: #333;
+	text-shadow:0px 1px 0px rgba(255,255,255,0.35);
+}
+
+#box form input[name=signup], #box form input[type=submit] {
+	background: url(../images/button.png) no-repeat;
+	border: none;
+	display: block;
+	position: absolute;
+	top: 255px;
+    left: 250px;
+    width: 150px;
+    height: 44px;
 	cursor: pointer;
 	font-size:16px;
 	font-weight:bold;
