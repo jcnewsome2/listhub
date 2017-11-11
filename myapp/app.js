@@ -31,6 +31,7 @@ var flash = require('connect-flash');
 app.use(flash());
 
 
+app.use(index);
 
 var models=require("./models");
 models.sequelize.sync().then(function(){
@@ -39,7 +40,7 @@ models.sequelize.sync().then(function(){
   console.log(err,"There was an error");
 });
 
-var authRoute = require('./routes/auth.js')(app,passport);
+// var authRoute = require('./routes/index.js')(app,passport);
 require('./config/passport/passport.js')(passport, models.User);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -59,12 +60,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-
-app.get('/', function(req, res) {
- 
-    res.send('Welcome to Passport with Sequelize');
-  // res.End();
-});
 
 app.listen(8080, function(err) {
  

@@ -52,12 +52,12 @@
   <div id="box">
     <img src="images/listhub-white.png" class="logo" alt="yourlogo" />
     <h1>Member Login</h1>
-    <form>
+    <form action="/login" method="POST" >
       <input type="text" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Username':this.value;" value="Username" />
       <input type="password" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Password':this.value;" value="Password">
       
-      <input type="button" name="login" value="Log In" />
-      <input type="button" name="signup" value = "Sign Up" />
+      <input type="submit" name="login" value="Log In" />
+      <!--<input type="button" name="signup" value = "Sign Up" />-->
     </form>
   </div>
   

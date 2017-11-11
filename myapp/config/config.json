@@ -4,9 +4,11 @@
  
         "username": "root",
  
-        "password": "Teacher12",
+        "password": "root",
+
+        "port": "8069",
  
-        "database": "giftlist",
+        "database": "listhub_db",
  
         "host": "127.0.0.1",
  

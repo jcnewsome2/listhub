@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var passport = require('passport');
 
 /* GET home page. */
 var isAuthenticated = function (req, res, next) {
@@ -12,17 +13,16 @@ var isAuthenticated = function (req, res, next) {
 	res.redirect('/');
 }
 
-module.exports = function(passport){
 
 	/* GET login page. */
-	router.get('/', function(req, res) {
+	router.get('/login', function(req, res) {
     	// Display the Login page with any flash message, if any
-		res.render('index', { message: req.flash('message') });
+		res.render('login', { message: req.flash('message') });
 	});
 
 	/* Handle Login POST */
-	router.post('/login', passport.authenticate('login', {
-		successRedirect: '/signup',
+	router.post('/login', passport.authenticate('local-signup', {
+		successRedirect: '/home',
 		failureRedirect: '/',
 		failureFlash : true  
 	}));
@@ -50,5 +50,4 @@ module.exports = function(passport){
 		res.redirect('/');
 	});
 
-	return router;
-}
+module.exports = router;
