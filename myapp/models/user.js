@@ -1,34 +1,28 @@
-module.exports = function(sequelize,Sequelize)
-{
-var User=sequelize.define('user',{
+module.exports = function(sequelize,Sequelize) {
 
-id:{
+var User=sequelize.define('user',{
+Id:{
 	autoIncrement:true,
 	primaryKey:true,
 	type:Sequelize.INTEGER
 },
 Name:{
-type:Sequelize.STRING,
-notEmpty:true
+	type:Sequelize.STRING,
+	notEmpty:true
 },
-
 Password:{
-type:Sequelize.STRING,
-allowNull:false	
+	type:Sequelize.STRING,
+	allowNull:false	
 },
-
 Email:{
 	type:Sequelize.STRING,
 	validate:{
 		isEmail:true
-	},
+},
 	allowNull:true
 }
 
 
 });
-
-
-
 return User;
 }

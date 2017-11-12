@@ -5,10 +5,8 @@
         "username": "root",
  
         "password": "root",
-
-        "port": "8069",
  
-        "database": "listhub_db",
+        "database": "giftlist",
  
         "host": "127.0.0.1",
  

@@ -11,9 +11,11 @@ $("#login").on("click", function(event){
 		"password": userPW
 	}
 
-	$.ajax({
 
-	}).then(function(data){
+$.ajax({
+  type: "POST",
+  url: '/login',
+  data: data
 
-	});
-})
+});
+});
